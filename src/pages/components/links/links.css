@@ -1,0 +1,45 @@
+nav .menu-links {
+  @apply w-0 h-screen flex flex-col items-center justify-center gap-6 absolute z-50 -start-[100vw] top-0 bg-slate-100 dark:bg-neutral-800;
+}
+nav .menu-links.active {
+  @apply w-full start-0;
+}
+@media screen and (min-width: 768px) {
+  nav .menu-links,
+  nav .menu-links.active {
+    @apply w-fit h-auto flex-row items-center justify-center gap-6 static bg-transparent;
+  }
+}
+nav .menu-links li:not(.contact) a.active,
+nav .menu-links li:not(.contact) a:hover {
+  @apply text-sky-800 dark:text-[tan] relative transition-all;
+}
+nav .menu-links li a::after {
+  content: "";
+  @apply w-0 bg-transparent;
+}
+nav .menu-links li:not(.contact) a.active::after,
+nav .menu-links li:not(.contact) a:hover::after {
+  @apply w-3/4 h-0.5 bg-sky-800 dark:bg-[tan] absolute top-6 rtl:top-7 left-1/2 -translate-x-1/2 transition-all;
+}
+nav .menu-links li.contact a {
+  @apply bg-sky-800 text-white dark:bg-[tan] dark:text-neutral-800 px-3.5 py-1.5 transition-all;
+  border-radius: 10rem 2rem 10rem 10rem;
+}
+body[dir="rtl"] nav .menu-links li.contact a {
+  border-radius: 2rem 10rem 10rem 10rem;
+}
+nav .menu-links li.contact a:hover,
+nav .menu-links li.contact a.active {
+  @apply bg-sky-600 dark:bg-[#f0cfa8];
+}
+nav .menu-links li a.active {
+  @apply pointer-events-none font-medium;
+}
+.appearence-button {
+  @apply w-11 px-0.5 py-0.5 bg-gray-200 dark:bg-neutral-600 rounded-full flex justify-start items-center shadow-md duration-200 hover:ring-2;
+}
+.appearence-button.ar,
+.appearence-button.dark {
+  @apply justify-end;
+}
