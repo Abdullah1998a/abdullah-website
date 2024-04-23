@@ -67,8 +67,7 @@
               "name": "الرَمز البَرمجيّ"
             }
           },
-          "preview": { "alt": "مَشروع huddle" },
-          "technologies": ["ReactJS", "Framer Motion", "Tailwind CSS"]
+          "preview": { "alt": "مَشروع huddle" }
         },
         "details": {
           "project_head": "خَلفيّة المَشروع",
@@ -100,8 +99,7 @@
               "name": "الرَمز البَرمجيّ"
             }
           },
-          "preview": { "alt": "مَشروع easybank" },
-          "technologies": ["ReactJS", "Framer Motion", "Tailwind CSS"]
+          "preview": { "alt": "مَشروع easybank" }
         },
         "details": {
           "project_head": "خَلفيّة المَشروع",
@@ -133,8 +131,7 @@
               "name": "الرَمز البَرمجيّ"
             }
           },
-          "preview": { "alt": "مَشروع blogr" },
-          "technologies": ["ReactJS", "Framer Motion", "Tailwind CSS"]
+          "preview": { "alt": "مَشروع blogr" }
         },
         "details": {
           "project_head": "خَلفيّة المَشروع",
@@ -166,8 +163,7 @@
               "name": "الرَمز البَرمجيّ"
             }
           },
-          "preview": { "alt": "مَشروع insure" },
-          "technologies": ["ReactJS", "Framer Motion", "Tailwind CSS"]
+          "preview": { "alt": "مَشروع insure" }
         },
         "details": {
           "project_head": "خَلفيّة المَشروع",

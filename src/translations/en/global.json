@@ -44,7 +44,7 @@
     "body": "I'm a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript also I've been learning ReactJS for more than a year from Meta company courses. I'm based in Damascus, Syria, but I'm happy working remotely. When I'm not coding, you'll find me outdoors I love being out in nature whether that's going for a walk, run or cycling I'd love you to check out my work.",
     "works_btn": "Go to Portfolio",
     "quotation": {
-      "head": "Quotation I liked",
+      "head": "Quote I liked",
       "quote": "“We aren’t obliged to correct the thinking of others, but we’re  obliged to take into account the scale of their mentalities.”"
     },
     "cup": { "alt": "cup of tea image" }
@@ -75,8 +75,7 @@
               "url": "https://github.com",
               "name": "Code"
             }
-          },
-          "technologies": ["ReactJS","Framer Motion", "Tailwind CSS"]
+          }
         },
         "details": {
           "project_head": "Project Background",
@@ -114,8 +113,7 @@
               "url": "https://github.com",
               "name": "Code"
             }
-          },
-          "technologies": ["ReactJS","Framer Motion", "Tailwind CSS"]
+          }
         },
         "details": {
           "project_head": "Project Background",
@@ -153,8 +151,7 @@
               "url": "https://github.com",
               "name": "Code"
             }
-          },
-          "technologies": ["ReactJS","Framer Motion", "Tailwind CSS"]
+          }
         },
         "details": {
           "project_head": "Project Background",
@@ -192,8 +189,7 @@
               "url": "https://github.com",
               "name": "Code"
             }
-          },
-          "technologies": ["ReactJS", "Framer Motion", "Tailwind CSS"]
+          }
         },
         "details": {
           "project_head": "Project Background",
