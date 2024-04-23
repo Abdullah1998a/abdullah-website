@@ -89,6 +89,8 @@ export default function Form({ setThank }) {
       initial="hidden"
       animate="visible"
       className="contact-form"
+      name="contact-form"
+      netlify
       variants={opacityVariants}
       onSubmit={formik.handleSubmit}
     >
