@@ -42,7 +42,7 @@ export default function Contact() {
       className="grid lg:grid-cols-2 xl:grid-cols-3 items-center py-10 relative"
     >
       <motion.header variants={appearVariants}>
-        <h1 className="text-sky-800 dark:text-[tan] text-2xl font-sora rtl:font-ibmBold">
+        <h1 className="text-sky-800 dark:text-[tan] text-3xl font-sora rtl:font-ibmBold">
           {t("contact.head.title")}
         </h1>
         <p className="text-slate-800 my-2.5 dark:text-neutral-300">
