@@ -83,15 +83,16 @@ export default function Form({ setThank }) {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...values }),
       })
-        .then(() => alert("Success!"))
-        .catch((error) => alert(error));
-      setThank({
-        name: values.full_name,
-        success_message: {
-          head: t("contact.success_message.head"),
-          body: t("contact.success_message.body"),
-        },
-      });
+        .then(() => {
+          setThank({
+            name: values.full_name,
+            success_message: {
+              head: t("contact.success_message.head"),
+              body: t("contact.success_message.body"),
+            },
+          });
+        })
+        .catch((error) => console.log(error));
       onSubmitProps.resetForm();
       onSubmitProps.setSubmitting(false);
     },
