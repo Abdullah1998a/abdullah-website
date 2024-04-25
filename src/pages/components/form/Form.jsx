@@ -48,6 +48,13 @@ const popupVariants = {
 };
 export default function Form({ setThank }) {
   const [t] = useTranslation("global");
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
   const formik = useFormik({
     initialValues: {
       full_name: "",
@@ -71,6 +78,13 @@ export default function Form({ setThank }) {
           .required(t("contact.form_errors.message.required")),
       }),
     onSubmit: (values, onSubmitProps) => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-uriencoded" },
+        body: encode({ "form-name": "contact", ...values }),
+      })
+        .then(() => alert("done"))
+        .catch((error) => alert(error));
       setThank({
         name: values.full_name,
         success_message: {
@@ -89,8 +103,6 @@ export default function Form({ setThank }) {
       initial="hidden"
       animate="visible"
       className="contact-form"
-      name="contact-form"
-      netlify
       variants={opacityVariants}
       onSubmit={formik.handleSubmit}
     >
