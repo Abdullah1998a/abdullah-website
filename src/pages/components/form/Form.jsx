@@ -91,10 +91,10 @@ export default function Form({ setThank }) {
               body: t("contact.success_message.body"),
             },
           });
+          onSubmitProps.resetForm();
+          onSubmitProps.setSubmitting(false);
         })
         .catch((error) => console.log(error));
-      onSubmitProps.resetForm();
-      onSubmitProps.setSubmitting(false);
     },
   });
   return (
