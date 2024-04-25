@@ -103,6 +103,7 @@ export default function Form({ setThank }) {
       initial="hidden"
       animate="visible"
       className="contact-form"
+      name="contact"
       variants={opacityVariants}
       onSubmit={formik.handleSubmit}
     >
@@ -110,6 +111,7 @@ export default function Form({ setThank }) {
         variants={scaleVariants}
         className="grid relative transition-all"
       >
+        <input type="hidden" name="form-full-name" value="contact" />
         <motion.input
           initial={{ marginBottom: 0 }}
           animate={{
@@ -146,6 +148,7 @@ export default function Form({ setThank }) {
         </motion.span>
       </motion.div>
       <motion.div variants={scaleVariants} className="grid relative">
+        <input type="hidden" name="form-email" value="contact" />
         <motion.input
           initial={{ marginBottom: 0 }}
           animate={{
@@ -181,6 +184,7 @@ export default function Form({ setThank }) {
         </motion.span>
       </motion.div>
       <motion.div variants={scaleVariants} className="grid relative">
+        <textarea hidden name="form-message" value="contact" />
         <motion.textarea
           initial={{ marginBottom: 0 }}
           animate={{
