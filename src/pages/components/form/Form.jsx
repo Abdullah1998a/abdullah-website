@@ -80,10 +80,10 @@ export default function Form({ setThank }) {
     onSubmit: (values, onSubmitProps) => {
       fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-uriencoded" },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...values }),
       })
-        .then(() => alert("done"))
+        .then(() => alert("Success!"))
         .catch((error) => alert(error));
       setThank({
         name: values.full_name,
@@ -103,7 +103,6 @@ export default function Form({ setThank }) {
       initial="hidden"
       animate="visible"
       className="contact-form"
-      name="contact"
       variants={opacityVariants}
       onSubmit={formik.handleSubmit}
     >
@@ -111,7 +110,6 @@ export default function Form({ setThank }) {
         variants={scaleVariants}
         className="grid relative transition-all"
       >
-        <input type="hidden" name="form-full-name" value="contact" />
         <motion.input
           initial={{ marginBottom: 0 }}
           animate={{
@@ -148,7 +146,6 @@ export default function Form({ setThank }) {
         </motion.span>
       </motion.div>
       <motion.div variants={scaleVariants} className="grid relative">
-        <input type="hidden" name="form-email" value="contact" />
         <motion.input
           initial={{ marginBottom: 0 }}
           animate={{
@@ -184,7 +181,6 @@ export default function Form({ setThank }) {
         </motion.span>
       </motion.div>
       <motion.div variants={scaleVariants} className="grid relative">
-        <textarea hidden name="form-message" value="contact" />
         <motion.textarea
           initial={{ marginBottom: 0 }}
           animate={{
