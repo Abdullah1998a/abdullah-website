@@ -37,7 +37,7 @@ nav .menu-links li a.active {
   @apply pointer-events-none font-medium;
 }
 .appearence-button {
-  @apply w-11 px-0.5 py-0.5 bg-gray-200 dark:bg-neutral-600 rounded-full flex justify-start items-center shadow-md duration-200 hover:ring-2;
+  @apply w-11 px-0.5 py-0.5 bg-gray-200 dark:bg-neutral-600 rounded-full flex justify-start items-center shadow-md duration-200 hover:ring-2 hover:ring-sky-800 dark:hover:ring-[tan];
 }
 .appearence-button.ar,
 .appearence-button.dark {

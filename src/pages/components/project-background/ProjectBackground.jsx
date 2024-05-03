@@ -86,7 +86,7 @@ export default function ProjectBackground() {
         {project_head}
       </h2>
       {description.map((item, ind) => (
-        <p className="text-slate-800 dark:text-neutral-300 text-balance" key={ind}>
+        <p className="text-slate-800 dark:text-neutral-300" key={ind}>
           {item}
         </p>
       ))}
