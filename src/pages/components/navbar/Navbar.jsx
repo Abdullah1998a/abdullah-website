@@ -1,7 +1,7 @@
-import { motion, AnimatePresence } from "framer-motion";
 import darkClose from "../../assets/images/dark-close.svg";
 import darkMenu from "../../assets/images/dark-menu.svg";
 import darkLogo from "../../assets/images/dark-logo.svg";
+import { motion, AnimatePresence } from "framer-motion";
 import close from "../../assets/images/close.svg";
 import menu from "../../assets/images/menu.svg";
 import logo from "../../assets/images/logo.svg";

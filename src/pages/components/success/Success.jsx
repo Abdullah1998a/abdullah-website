@@ -1,6 +1,6 @@
+import done from "../../assets/images/done.svg";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import done from "../../assets/images/done.svg";
 import { useEffect } from "react";
 import "./success.css";
 

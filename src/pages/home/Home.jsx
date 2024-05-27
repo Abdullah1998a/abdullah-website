@@ -1,13 +1,13 @@
 import { SocialIcons } from "../components/social-icons";
+import badgeThumbnail from "../assets/images/meta.gif";
+import heroThumbnail from "../assets/images/hero.gif";
 import { useTranslation } from "react-i18next";
 import badge from "../assets/images/meta.png";
-import badgeThumbnail from "../assets/images/meta.gif";
 import hero from "../assets/images/hero.png";
-import heroThumbnail from "../assets/images/hero.gif";
+import { LazyLoad } from "../components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./home.css";
-import { LazyLoad } from "../components";
 
 const pagesVariants = {
   hidden: {

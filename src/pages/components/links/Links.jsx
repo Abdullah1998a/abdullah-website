@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
-import arabicLanguage from "../../assets/images/arabic.svg";
 import englishLanguage from "../../assets/images/english.svg";
+import arabicLanguage from "../../assets/images/arabic.svg";
+import { AnimatePresence, motion } from "framer-motion";
 import lightTheme from "../../assets/images/light.svg";
 import darkTheme from "../../assets/images/dark.svg";
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./links.css";
 
 const menuLinksVariants = {

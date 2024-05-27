@@ -1,9 +1,9 @@
+import framerMotionLogo from "../../assets/images/framer-motion.svg";
+import tailwindCSSLogo from "../../assets/images/tailwind-css.svg";
+import reactJSLogo from "../../assets/images/reactjs.svg";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import reactJSLogo from "../../assets/images/reactjs.svg";
-import framerMotionLogo from "../../assets/images/framer-motion.svg";
-import tailwindCSSLogo from "../../assets/images/tailwind-css.svg";
 
 const appearVariants = {
   hidden: {

@@ -1,6 +1,6 @@
+import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Success } from "../components";
-import { AnimatePresence, motion } from "framer-motion";
 import { Form } from "../components";
 import { useState } from "react";
 
