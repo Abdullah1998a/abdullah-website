@@ -63,7 +63,9 @@ export default function About({ theme }) {
         </h1>
         <div className="my-3">
           {t("about.body", { returnObjects: true }).map((sentence) => (
-            <p className="text-slate-800 dark:text-neutral-300">{sentence}</p>
+            <p key={sentence} className="text-slate-800 dark:text-neutral-300">
+              {sentence}
+            </p>
           ))}
         </div>
         <div className="mb-5">

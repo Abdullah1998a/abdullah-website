@@ -1,10 +1,13 @@
 import { SocialIcons } from "../components/social-icons";
 import { useTranslation } from "react-i18next";
 import badge from "../assets/images/meta.png";
+import badgeThumbnail from "../assets/images/meta.gif";
 import hero from "../assets/images/hero.png";
+import heroThumbnail from "../assets/images/hero.gif";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./home.css";
+import { LazyLoad } from "../components";
 
 const pagesVariants = {
   hidden: {
@@ -87,6 +90,14 @@ const socialIcons = [
     },
   },
 ];
+const imageHero = {
+  src: hero,
+  thumbnail: heroThumbnail,
+};
+const imageBadge = {
+  src: badge,
+  thumbnail: badgeThumbnail,
+};
 export default function Home({ theme }) {
   const [t] = useTranslation("global");
   return (
@@ -119,18 +130,12 @@ export default function Home({ theme }) {
       </motion.div>
       <motion.div variants={fadeVariants} className="place-self-center">
         <div className="img-container flex justify-center items-center">
-          <motion.img
-            variants={fadeVariants}
-            className="w-60 drop-shadow-2xl"
-            src={hero}
-            alt={t("home.hero.alt")}
-          />
-          <motion.img
-            variants={fadeVariants}
-            className="w-14 absolute z-10 top-8 -start-4"
-            src={badge}
-            alt={t("home.badge.alt")}
-          />
+          <motion.div variants={fadeVariants} className="w-60 drop-shadow-2xl">
+            <LazyLoad image={imageHero} alt={t("home.hero.alt")} />
+          </motion.div>
+          <motion.div variants={fadeVariants} className="w-14 absolute z-10 top-8 -start-4">
+            <LazyLoad image={imageBadge} alt={t("home.badge.alt")} />
+          </motion.div>
         </div>
       </motion.div>
     </motion.header>

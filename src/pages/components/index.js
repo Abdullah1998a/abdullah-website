@@ -1,11 +1,12 @@
-import { Navbar } from "./navbar";
-import { Project } from "./project";
-import { Success } from "./success";
-import { University } from "./university";
-import { Platform } from "./platform";
-import { ProjectSummary } from "./project-summary";
 import { ProjectBackground } from "./project-background";
 import { SliderControler } from "./slider-controler";
+import { ProjectSummary } from "./project-summary";
+import { University } from "./university";
+import { LazyLoad } from "./lazy-load";
+import { Platform } from "./platform";
+import { Project } from "./project";
+import { Success } from "./success";
+import { Navbar } from "./navbar";
 import { Form } from "./form";
 
 export {
@@ -14,8 +15,9 @@ export {
   Success,
   University,
   Platform,
+  LazyLoad,
   ProjectSummary,
   ProjectBackground,
   SliderControler,
-  Form
+  Form,
 };

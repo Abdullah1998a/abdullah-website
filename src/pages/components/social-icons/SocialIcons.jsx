@@ -34,7 +34,7 @@ export default function SocialIcons({ icons, theme }) {
           <a href={link} target="_blank">
             <motion.svg
               initial={{ fill: theme ? "rgb(229 229 229)" : "rgb(28 25 23)" }}
-              whileHover={{ fill: theme ? "tan" : "rgb(7 89 133)", scale: 0.9 }}
+              whileHover={{ fill: theme ? "rgb(210 180 140)" : "rgb(7 89 133)", scale: 0.9 }}
               key={theme}
               xmlns="http://www.w3.org/2000/svg"
               viewBox={view_box}
