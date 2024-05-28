@@ -1,6 +1,8 @@
+import svuThumbnail from "../../assets/images/education/thumbnails/svu-logo.png";
 import damascus from "../../assets/images/education/damascus-logo.jpeg";
 import svu from "../../assets/images/education/svu-logo.png";
 import { useTranslation } from "react-i18next";
+import { LazyLoad } from "../lazy-load";
 import { motion } from "framer-motion";
 
 const degreesVariants = {
@@ -27,7 +29,16 @@ const appearVariants = {
     opacity: 1,
   },
 };
-const imgs = [svu, damascus];
+const imgs = [
+  {
+    src: svu,
+    thumbnail: svuThumbnail,
+  },
+  {
+    src: damascus,
+    thumbnail: damascus,
+  },
+];
 export default function University() {
   const [t] = useTranslation("global");
   const { head, labels, degrees } = t("education.university", {
@@ -50,19 +61,23 @@ export default function University() {
         className="lg:col-start-6 lg:col-span-5 xl:col-start-5 xl:col-span-4 grid gap-16 lg:gap-4 justify-center items-start pt-16 lg:pt-0"
       >
         {degrees.map(
-          ({ id, name, logo, organization, skills, date, grade }, ind) => {
+          ({ id, name, logo, organization, skills, date, grade }) => {
             return (
               <motion.li
                 variants={degreesVariants}
                 className="bg-gray-100 dark:bg-neutral-800 px-6 py-4 rounded-md shadow relative"
                 key={id}
               >
-                <img
-                  className="w-[3.25rem] aspect-square object-contain absolute -top-8 lg:top-0 left-0 lg:-left-6 -translate-y-1/2 lg:-translate-y-0 lg:-translate-x-full 
-                  rtl:right-0 rtl:lg:translate-x-full rtl:lg:-right-6 dark:rounded-md dark:bg-neutral-200 dark:p-[2px]"
-                  src={imgs[ind]}
-                  alt={logo.alt}
-                />
+                <span
+                  className="w-[3.25rem] absolute -top-8 lg:top-0 left-0 lg:-left-6 -translate-y-1/2 lg:-translate-y-0 lg:-translate-x-full 
+                  rtl:right-0 rtl:lg:translate-x-full rtl:lg:-right-6"
+                >
+                  <LazyLoad
+                    image={imgs[parseInt(id - 1)]}
+                    alt={logo.alt}
+                    className="dark:rounded-md dark:bg-neutral-200 dark:p-[2px] aspect-square object-contain"
+                  />
+                </span>
                 <h3 className="font-sora rtl:font-ibmBold font-semibold mb-1.5 text-balance dark:text-neutral-200">
                   {name}
                 </h3>

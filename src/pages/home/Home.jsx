@@ -1,6 +1,6 @@
 import { SocialIcons } from "../components/social-icons";
-import badgeThumbnail from "../assets/images/meta.gif";
-import heroThumbnail from "../assets/images/hero.gif";
+import badgeThumbnail from "../assets/images/thumbnails/meta.png";
+import heroThumbnail from "../assets/images/thumbnails/hero.png";
 import { useTranslation } from "react-i18next";
 import badge from "../assets/images/meta.png";
 import hero from "../assets/images/hero.png";
@@ -90,11 +90,11 @@ const socialIcons = [
     },
   },
 ];
-const imageHero = {
+const heroImage = {
   src: hero,
   thumbnail: heroThumbnail,
 };
-const imageBadge = {
+const badgeImage = {
   src: badge,
   thumbnail: badgeThumbnail,
 };
@@ -131,10 +131,13 @@ export default function Home({ theme }) {
       <motion.div variants={fadeVariants} className="place-self-center">
         <div className="img-container flex justify-center items-center">
           <motion.div variants={fadeVariants} className="w-60 drop-shadow-2xl">
-            <LazyLoad image={imageHero} alt={t("home.hero.alt")} />
+            <LazyLoad image={heroImage} alt={t("home.hero.alt")} />
           </motion.div>
-          <motion.div variants={fadeVariants} className="w-14 absolute z-10 top-8 -start-4">
-            <LazyLoad image={imageBadge} alt={t("home.badge.alt")} />
+          <motion.div
+            variants={fadeVariants}
+            className="w-14 absolute z-10 top-8 -start-4"
+          >
+            <LazyLoad image={badgeImage} alt={t("home.badge.alt")} />
           </motion.div>
         </div>
       </motion.div>

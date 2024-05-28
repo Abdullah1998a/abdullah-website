@@ -1,3 +1,7 @@
+import easybankThumbnail from "../assets/images/easybank-project/thumbnails/easybank.jpg";
+import huddleThumbnail from "../assets/images/huddle-project/thumbnails/huddle.jpg";
+import insureThumbnail from "../assets/images/insure-project/thumbnails/insure.jpg";
+import blogrThumbnail from "../assets/images/blogr-project/thumbnails/blogr.jpg";
 import easybank from "../assets/images/easybank-project/easybank.jpg";
 import huddle from "../assets/images/huddle-project/huddle.jpg";
 import insure from "../assets/images/insure-project/insure.jpg";
@@ -30,18 +34,22 @@ const imgs = [
   {
     id: 1,
     src: huddle,
+    thumbnail: huddleThumbnail,
   },
   {
     id: 2,
     src: easybank,
+    thumbnail: easybankThumbnail,
   },
   {
     id: 3,
     src: blogr,
+    thumbnail: blogrThumbnail,
   },
   {
     id: 4,
     src: insure,
+    thumbnail: insureThumbnail,
   },
 ];
 export default function Portfolio() {
@@ -65,7 +73,14 @@ export default function Portfolio() {
       <div className="xl:w-10/12 xl:mx-auto grid gap-16 lg:pt-20 py-10">
         {t("portfolio.projects", { returnObjects: true }).map((project) => {
           let img = imgs.find((img) => img.id === project.id);
-          return <Project content={project} key={project.id} src={img.src} />;
+          return (
+            <Project
+              content={project}
+              key={project.id}
+              src={img.src}
+              thumbnail={img.thumbnail}
+            />
+          );
         })}
       </div>
     </motion.section>

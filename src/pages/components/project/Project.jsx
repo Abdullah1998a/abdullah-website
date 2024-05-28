@@ -1,3 +1,4 @@
+import { LazyLoad } from "../lazy-load";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./project.css";
@@ -12,7 +13,7 @@ const projectVariants = {
     opacity: 1,
   },
 };
-export default function Project({ content, src }) {
+export default function Project({ content, src, thumbnail }) {
   const {
     id,
     project: {
@@ -22,6 +23,10 @@ export default function Project({ content, src }) {
       details_btn,
     },
   } = content;
+  const projectImage = {
+    src,
+    thumbnail,
+  };
   return (
     <motion.div
       layout
@@ -30,8 +35,8 @@ export default function Project({ content, src }) {
       whileInView="visible"
       className="project"
     >
-      <div className="md:w-4/5 col-span-2">
-        <img className="rounded-lg" src={src} alt={alt} />
+      <div className="flex items-center md:w-4/5 col-span-2">
+        <LazyLoad image={projectImage} alt={alt} className="rounded-lg" />
       </div>
       <div className="xl:w-4/5 col-span-2">
         <h2 className="font-sora font-semibold text-xl dark:text-neutral-200">

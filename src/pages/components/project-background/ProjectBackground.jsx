@@ -1,3 +1,11 @@
+import easybankDesktopThumbnail from "../../assets/images/easybank-project/thumbnails/easybank.jpg";
+import easybankMobileThumbnail from "../../assets/images/easybank-project/thumbnails/mobile.jpg";
+import huddleDesktopThumbnail from "../../assets/images/huddle-project/thumbnails/huddle.jpg";
+import insureDesktopThumbnail from "../../assets/images/insure-project/thumbnails/insure.jpg";
+import huddleMobileThumbnail from "../../assets/images/huddle-project/thumbnails/mobile.jpg";
+import insureMobileThumbnail from "../../assets/images/insure-project/thumbnails/mobile.jpg";
+import blogrDesktopThumbnail from "../../assets/images/blogr-project/thumbnails/blogr.jpg";
+import blogrMobileThumbnail from "../../assets/images/blogr-project/thumbnails/mobile.jpg";
 import easybankDesktop from "../../assets/images/easybank-project/easybank.jpg";
 import easybankMobile from "../../assets/images/easybank-project/mobile.jpg";
 import huddleDesktop from "../../assets/images/huddle-project/huddle.jpg";
@@ -8,6 +16,7 @@ import blogrDesktop from "../../assets/images/blogr-project/blogr.jpg";
 import blogrMobile from "../../assets/images/blogr-project/mobile.jpg";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
+import { LazyLoad } from "../lazy-load";
 import { motion } from "framer-motion";
 
 const imgs = [
@@ -16,6 +25,8 @@ const imgs = [
     src: {
       desktop: huddleDesktop,
       mobile: huddleMobile,
+      desktopThumbnail: huddleDesktopThumbnail,
+      mobileThumbnail: huddleMobileThumbnail,
     },
   },
   {
@@ -23,6 +34,8 @@ const imgs = [
     src: {
       desktop: easybankDesktop,
       mobile: easybankMobile,
+      desktopThumbnail: easybankDesktopThumbnail,
+      mobileThumbnail: easybankMobileThumbnail,
     },
   },
   {
@@ -30,6 +43,8 @@ const imgs = [
     src: {
       desktop: blogrDesktop,
       mobile: blogrMobile,
+      desktopThumbnail: blogrDesktopThumbnail,
+      mobileThumbnail: blogrMobileThumbnail,
     },
   },
   {
@@ -37,6 +52,8 @@ const imgs = [
     src: {
       desktop: insureDesktop,
       mobile: insureMobile,
+      desktopThumbnail: insureDesktopThumbnail,
+      mobileThumbnail: insureMobileThumbnail,
     },
   },
 ];
@@ -68,13 +85,21 @@ export default function ProjectBackground() {
   let content = t("portfolio.projects", { returnObjects: true }).find(
     (pro) => pro.id == id
   );
-  let imgSrc = imgs.find((img) => img.id == id).src;
+  let img = imgs.find((img) => img.id == id).src;
   const {
     project_head,
     description,
     previews_head,
     previews: { desktop, mobile },
   } = content.details;
+  const responsiveDesktopDesign = {
+    src: img.desktop,
+    thumbnail: img.desktopThumbnail,
+  };
+  const responsiveMobileDesign = {
+    src: img.mobile,
+    thumbnail: img.mobileThumbnail,
+  };
   return (
     <motion.div
       variants={appearVariants}
@@ -101,20 +126,20 @@ export default function ProjectBackground() {
           variants={fadeVariants}
           className="sm:w-4/5 sm:mx-auto md:w-1/2"
         >
-          <img
-            className="w-full rounded-lg shadow-md"
-            src={imgSrc.desktop}
+          <LazyLoad
+            image={responsiveDesktopDesign}
             alt={desktop.alt}
+            className="w-full rounded-lg shadow-md"
           />
         </motion.div>
         <motion.div
           variants={fadeVariants}
           className="sm:w-4/5 sm:mx-auto md:w-1/2"
         >
-          <img
-            className="w-full rounded-lg shadow-md"
-            src={imgSrc.mobile}
+          <LazyLoad
+            image={responsiveMobileDesign}
             alt={mobile.alt}
+            className="w-full rounded-lg shadow-md"
           />
         </motion.div>
       </motion.div>

@@ -1,8 +1,10 @@
+import icdlThembnail from "../../assets/images/education/thumbnails/icdl-logo.png";
 import johnsHopkins from "../../assets/images/education/johns-hopkins-logo.png";
 import michigan from "../../assets/images/education/michigan-logo.jpeg";
 import icdl from "../../assets/images/education/icdl-logo.png";
 import meta from "../../assets/images/education/meta-logo.png";
 import { useTranslation } from "react-i18next";
+import { LazyLoad } from "../lazy-load";
 import { motion } from "framer-motion";
 
 const credentialsVariants = {
@@ -29,7 +31,24 @@ const appearVariants = {
     opacity: 1,
   },
 };
-const imgs = [meta, icdl, michigan, johnsHopkins];
+const imgs = [
+  {
+    src: meta,
+    thumbnail: meta,
+  },
+  {
+    src: icdl,
+    thumbnail: icdlThembnail,
+  },
+  {
+    src: michigan,
+    thumbnail: michigan,
+  },
+  {
+    src: johnsHopkins,
+    thumbnail: johnsHopkins,
+  },
+];
 export default function Platform() {
   const [t] = useTranslation("global");
   const { head, labels, credentials } = t("education.platform", {
@@ -62,19 +81,23 @@ export default function Platform() {
               link: { text, url },
               date,
               grade,
-            },
-            ind
+            }
           ) => (
             <motion.li
               variants={credentialsVariants}
               className="bg-gray-100 dark:bg-neutral-800 px-6 py-4 rounded-md shadow relative"
               key={id}
             >
-              <img
-                className="w-[3.25rem] absolute -top-8 lg:top-0 left-0 lg:-left-6 -translate-y-1/2 lg:-translate-y-0 lg:-translate-x-full rtl:right-0 rtl:lg:translate-x-full rtl:lg:-right-6 dark:rounded-md dark:bg-neutral-200 dark:p-[2px]"
-                src={imgs[ind]}
-                alt={logo.alt}
-              />
+              <span
+                className="w-[3.25rem] absolute -top-8 lg:top-0 left-0 lg:-left-6 -translate-y-1/2 lg:-translate-y-0 lg:-translate-x-full 
+                  rtl:right-0 rtl:lg:translate-x-full rtl:lg:-right-6"
+              >
+                <LazyLoad
+                  image={imgs[parseInt(id - 1)]}
+                  alt={logo.alt}
+                  className="dark:rounded-md dark:bg-neutral-200 dark:p-[2px] aspect-square object-contain"
+                />
+              </span>
               <h3 className="font-sora rtl:font-ibmBold font-semibold mb-1.5 text-balance dark:text-neutral-200">
                 {name}
               </h3>
