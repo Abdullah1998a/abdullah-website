@@ -1,0 +1,8 @@
+.appearence-button,
+.appearence-button {
+  @apply w-11 px-0.5 py-0.5 bg-gray-200 dark:bg-neutral-600 rounded-full flex justify-start items-center shadow-md duration-200 hover:ring-2 hover:ring-sky-800 dark:hover:ring-[tan];
+}
+.ar,
+.dark {
+  @apply justify-end;
+}

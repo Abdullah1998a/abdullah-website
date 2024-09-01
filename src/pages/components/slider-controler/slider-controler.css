@@ -1,0 +1,6 @@
+.slider-btn {
+  @apply transition-all py-2 px-3 flex flex-col items-start gap-1 hover:bg-gray-200 dark:hover:bg-neutral-800 hover:rounded-md;
+}
+.project-name {
+  @apply text-xl font-rubik text-sky-800 dark:text-[tan] font-medium;
+}

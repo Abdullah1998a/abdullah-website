@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "IBM-Regular";
+  src: url("./pages/assets/fonts/ibm-regular.ttf");
+}
+@font-face {
+  font-family: "IBM-Bold";
+  src: url("./pages/assets/fonts/ibm-bold.ttf");
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./pages/assets/fonts/rubik.ttf");
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    @apply dark:bg-neutral-900;
+  }
+  html::-webkit-scrollbar {
+    @apply hidden;
+  }
+  *,
+  *::after,
+  *::before {
+    @apply text-stone-900 select-none scroll-smooth;
+  }
+  body {
+    @apply font-rubik rtl:font-ibmRegular;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply rtl:font-ibmBold font-bold;
+  }
+  nav + header,
+  section {
+    @apply min-h-[calc(calc(100dvh-75.35px))] px-6 py-10 md:px-16 md:py-0;
+  }
+  .button {
+    @apply text-white bg-sky-800 dark:bg-[tan] dark:text-neutral-700 px-6 py-1.5 transition duration-200 rounded-full hover:bg-sky-600 dark:hover:bg-[#f0cfa8] hover:shadow-lg;
+  }
+  .simple-link {
+    @apply font-medium transition-colors hover:underline hover:decoration-dotted text-sky-800 dark:hover:text-[tan] dark:text-[tan];
+  }
+}

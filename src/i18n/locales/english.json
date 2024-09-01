@@ -1,0 +1,371 @@
+{
+  "links": [
+    {
+      "id": 1,
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "name": "About",
+      "path": "/about"
+    },
+    {
+      "id": 3,
+      "name": "Portfolio",
+      "path": "/portfolio"
+    },
+    {
+      "id": 4,
+      "name": "Education",
+      "path": "/education"
+    },
+    {
+      "id": 5,
+      "name": "Contact",
+      "path": "/contact"
+    }
+  ],
+  "home": {
+    "name": {
+      "0": "Hi, I'm",
+      "1": "Abdullah"
+    },
+    "goal": "Welcome to my website, where creativity knows no boundaries. Unleash your imagination and explore endless possibilities.",
+    "hero_btn": "Say Hi",
+    "hero": { "alt": "hero image" }
+  },
+  "about": {
+    "head": "About Me",
+    "body": ["I am a junior front-end developer, based in Damascus, and I am looking for an exciting opportunity in web development. Alongside my experience in web technologies such as HTML, CSS, and JavaScript, I am proficient in using React.js, React Router, and Tailwind CSS to design and style responsive and attractive web pages. I also utilize Framer Motion to add vitality and dynamism to the web pages I develop.",
+    "During my free time, I enjoy hiking in nature, reading books, and staying up-to-date with the latest technological advancements to keep abreast of developments in my field."],
+    "works_btn": "Go to Portfolio",
+    "quotation": {
+      "head": "Quote I liked",
+      "quote": "“We aren’t obliged to correct the thinking of others, but we’re  obliged to take into account the scale of their mentalities.”"
+    },
+    "about_img": { "alt": "about image" }
+  },
+  "portfolio": {
+    "head": {
+      "title": "My Latest Works",
+      "desc": "Perfect solution for digital experience."
+    },
+    "return_btn": "Back to Portfolio",
+    "slider_btns": { "prev": "Previous Project", "next": "Next Project" },
+    "projects": [
+      {
+        "id": 1,
+        "project": {
+          "name": "Huddle",
+          "summary": "The Huddle project is about building out a landing page, which cares about generating meaningful discussions with your audience and build a strong, loyal community, and get it looking as close to the design as possible.",
+          "preview": {
+            "alt": "huddle project"
+          },
+          "details_btn": "More Details",
+          "links": {
+            "live": {
+              "url": "https://huddle-2024.netlify.app",
+              "name": "Live Site"
+            },
+            "code": {
+              "url": "https://github.com/Abdullah1998a/huddle.git",
+              "name": "Code"
+            }
+          }
+        },
+        "details": {
+          "project_head": "Project Background",
+          "previews_head": "Responsive Desing",
+          "description": [
+            "The project is to build out this landing page and get it looking as close to the design as possible.",
+            "I used to complete this project sucessfully ReactJS, which is a javascript library, so I divided the project into small stateless components, and there is no functionality in this project. Also I used Framer Motion library to animate the entire website. In addition, I used Tailwind CSS to style it perfectly.",
+            "Users should be able to view the optimal layout for the site depending on their device's screen size and see hover states for all interactive elements on the page."
+          ],
+          "previews": {
+            "desktop": {
+              "alt": "huddle project desktop"
+            },
+            "mobile": {
+              "alt": "huddle project mobile"
+            }
+          }
+        }
+      },
+      {
+        "id": 2,
+        "project": {
+          "name": "Easybank",
+          "summary": "The Easybank project is about building out a landing page, which cares about taking and controling your financial life online, and get it looking as close to the design as possible.",
+          "preview": {
+            "alt": "easybank project"
+          },
+          "details_btn": "More Details",
+          "links": {
+            "live": {
+              "url": "https://easybank-2024.netlify.app",
+              "name": "Live Site"
+            },
+            "code": {
+              "url": "https://github.com/Abdullah1998a/easybank.git",
+              "name": "Code"
+            }
+          }
+        },
+        "details": {
+          "project_head": "Project Background",
+          "previews_head": "Responsive Desing",
+          "description": [
+            "The project is to build out this landing page and get it looking as close to the design as possible.",
+            "I used to complete this project sucessfully ReactJS, which is a javascript library, so I divided the project into small components, and there is functionality in this project for mobile menu. Also I used Framer Motion library to animate the entire website. In addition, I used Tailwind CSS to style it perfectly.",
+            "Users should be able to view the optimal layout for the site depending on their device's screen size and see hover states for all interactive elements on the page."
+          ],
+          "previews": {
+            "desktop": {
+              "alt": "easybank project desktop"
+            },
+            "mobile": {
+              "alt": "easybank project mobile"
+            }
+          }
+        }
+      },
+      {
+        "id": 3,
+        "project": {
+          "name": "Blogr",
+          "summary": "The Blogr project is about building out a landing page, which cares about providing easy ways to add functionality or change the looks of a blog, and get it looking as close to the design as possible.",
+          "preview": {
+            "alt": "blogr project"
+          },
+          "details_btn": "More Details",
+          "links": {
+            "live": {
+              "url": "https://blogr-2024.netlify.app",
+              "name": "Live Site"
+            },
+            "code": {
+              "url": "https://github.com/Abdullah1998a/blogr.git",
+              "name": "Code"
+            }
+          }
+        },
+        "details": {
+          "project_head": "Project Background",
+          "previews_head": "Responsive Desing",
+          "description": [
+            "The project is to build out this landing page and get it looking as close to the design as possible.",
+            "I used to complete this project sucessfully ReactJS, which is a javascript library, so I divided the project into small components, and there is functionality in this project for mobile menu. Also I used Framer Motion library to animate the entire website. In addition, I used Tailwind CSS to style it perfectly.",
+            "Users should be able to view the optimal layout for the site depending on their device's screen size and see hover states for all interactive elements on the page."
+          ],
+          "previews": {
+            "desktop": {
+              "alt": "blogr project desktop"
+            },
+            "mobile": {
+              "alt": "blogr project mobile"
+            }
+          }
+        }
+      },
+      {
+        "id": 4,
+        "project": {
+          "name": "Insure",
+          "summary": "The Insure project is about building out a landing page, which cares about getting your life insurance coverage easier and faster, and get it looking as close to the design as possible.",
+          "preview": {
+            "alt": "insure project"
+          },
+          "details_btn": "More Details",
+          "links": {
+            "live": {
+              "url": "https://insure-2024.netlify.app",
+              "name": "Live Site"
+            },
+            "code": {
+              "url": "https://github.com/Abdullah1998a/insure.git",
+              "name": "Code"
+            }
+          }
+        },
+        "details": {
+          "project_head": "Project Background",
+          "previews_head": "Responsive Desing",
+          "description": [
+            "The project is to build out this landing page and get it looking as close to the design as possible.",
+            "I used to complete this project sucessfully ReactJS, which is a javascript library, so I divided the project into small components, and there is functionality in this project for mobile menu. Also I used Framer Motion library to animate the entire website. In addition, I used Tailwind CSS to style it perfectly.",
+            "Users should be able to view the optimal layout for the site depending on their device's screen size and see hover states for all interactive elements on the page."
+          ],
+          "previews": {
+            "desktop": {
+              "alt": "insure project desktop"
+            },
+            "mobile": {
+              "alt": "insure project mobile"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "education": {
+    "head": {
+      "title": "Education Background",
+      "desc": "Here is all my learning journey."
+    },
+    "university": {
+      "head": "Academic Education",
+      "labels": {
+        "skills": "Skills I've earned",
+        "grade": "Grade"
+      },
+      "degrees": [
+        {
+          "id": 1,
+          "name": "Master in computer science",
+          "logo": { "alt": "svu logo" },
+          "organization": "SVU university",
+          "date": ["Started at", "Feb 15, 2024"]
+        },
+        {
+          "id": 2,
+          "name": "Communications & Electronics engineering",
+          "logo": { "alt": "damascus logo" },
+          "organization": "Damascus university",
+          "skills": [
+            "Communication systems",
+            "Wireless technologies",
+            "Electronics",
+            "Visual communication",
+            "Algorithms",
+            "Programming"
+          ],
+          "date": ["Graduated at", "Oct 15, 2023"],
+          "grade": "73.75%"
+        }
+      ]
+    },
+    "platform": {
+      "head": "Courses I've Done",
+      "labels": {
+        "skills": "Skills I've earned",
+        "grade": "Grade"
+      },
+      "credentials": [
+        {
+          "id": 1,
+          "name": "Frontend developer specialization",
+          "logo": { "alt": "meta logo" },
+          "organization": ["by Meta", "on Coursera platform"],
+          "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Github",
+            "Git",
+            "UI & UX design",
+            "ReactJS"
+          ],
+          "link": {
+            "text": "Show credential",
+            "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/NDM299PYGG9M"
+          },
+          "date": ["Certificate earned at", "May 19, 2023"],
+          "grade": "97.66%"
+        },
+        {
+          "id": 2,
+          "name": "International computer driving License",
+          "logo": { "alt": "icdl logo" },
+          "organization": "by ICDL foundation",
+          "skills": [
+            "Documents",
+            "Presentations",
+            "Spreadsheets",
+            "Using database",
+            "Online essentials",
+            "Computer essentials",
+            "IT security"
+          ],
+          "link": {
+            "text": "Show credential",
+            "url": "https://drive.google.com/file/d/10dFNN7qgEciTe4WTDGw3-oroQArMTqbU/view?usp=drivesdk"
+          },
+          "date": ["Certificate earned at", "Nov 5, 2022"],
+          "grade": "92.43%"
+        },
+        {
+          "id": 3,
+          "name": "Web design for everybody: Basics of web development & coding specialization",
+          "logo": { "alt": "michigan logo" },
+          "organization": ["by University of Michigan", "on Coursera platform"],
+          "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Web develpment",
+            "Responsive web design"
+          ],
+          "link": {
+            "text": "Show credential",
+            "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/Q922T6XY5BCH"
+          },
+          "date": ["Certificate earned at", "Sep 5, 2021"],
+          "grade": "96.88%"
+        },
+        {
+          "id": 4,
+          "name": "HTML, CSS and JavaScript for web developers",
+          "logo": { "alt": "johns hopkins logo" },
+          "organization": [
+            "by John Hopkins University",
+            "on Coursera platform"
+          ],
+          "skills": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+          "link": {
+            "text": "Show credential",
+            "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/3JYRL4RJEFUJ"
+          },
+          "date": ["Certificate earned at", "Jul 24, 2021"],
+          "grade": "98.95%"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "head": {
+      "title": "Let's make something amazing together",
+      "desc": "Start by saying hi, and tell me whatever you want."
+    },
+    "form_labels": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "message": "Message",
+      "send_btn": "Send the Message"
+    },
+    "success_message": {
+      "head": "Thank you",
+      "body": "Your message has been sent successfully."
+    },
+    "form_errors": {
+      "name": {
+        "less": "Name must be at least 2 characters.",
+        "more": "Name must be at most 20 characters.",
+        "required": "Name is a required field."
+      },
+      "email": {
+        "format": "Email must be a valid email.",
+        "required": "Email is a required field."
+      },
+      "message": {
+        "less": "Message must be at least 2 characters.",
+        "more": "Message must be at most 300 characters.",
+        "required": "Message is a required field."
+      }
+    }
+  },
+  "not_found": {
+    "head": { "title": "404", "body": "Sorry, This page is not found!" },
+    "back_home": "Back to Home"
+  }
+}

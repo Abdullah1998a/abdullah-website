@@ -1,0 +1,12 @@
+nav .menu-links {
+  @apply w-0 h-screen flex flex-col items-center justify-center gap-6 absolute z-50 -start-[100vw] top-0 bg-slate-100 dark:bg-neutral-800;
+}
+nav .menu-links.active {
+  @apply w-full start-0;
+}
+@media screen and (min-width: 768px) {
+  nav .menu-links,
+  nav .menu-links.active {
+    @apply w-fit h-auto flex-row items-center justify-center gap-6 static bg-transparent;
+  }
+}
