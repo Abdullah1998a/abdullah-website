@@ -41,9 +41,9 @@
     @apply min-h-[calc(calc(100dvh-75.35px))] px-6 py-10 md:px-16 md:py-0;
   }
   .button {
-    @apply text-white bg-sky-800 dark:bg-[tan] dark:text-neutral-700 px-6 py-1.5 transition duration-200 rounded-full hover:bg-sky-600 dark:hover:bg-[#f0cfa8] hover:shadow-lg;
+    @apply text-white bg-primary dark:bg-dark dark:text-neutral-800 px-6 py-1.5 transition duration-200 rounded-full hover:bg-primary_hover dark:hover:bg-dark_hover hover:shadow-lg;
   }
   .simple-link {
-    @apply font-medium transition-colors hover:underline hover:decoration-dotted text-sky-800 dark:hover:text-[tan] dark:text-[tan];
+    @apply font-medium transition-colors hover:underline hover:decoration-dotted text-primary hover:text-primary_hover dark:hover:text-dark_hover dark:text-dark;
   }
 }

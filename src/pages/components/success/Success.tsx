@@ -43,7 +43,7 @@ export default function Success({ thank, setThank }: SuccessProbs) {
         <img src={done} className="w-16 mx-auto" />
         <h1 className="text-lg dark:text-neutral-300">
           {head}{" "}
-          <span className="capitalize text-sky-800 dark:text-[tan] rtl:font-ibmBold">
+          <span className="capitalize text-primary dark:text-dark rtl:font-ibmBold">
            {name}
           </span>
         </h1>

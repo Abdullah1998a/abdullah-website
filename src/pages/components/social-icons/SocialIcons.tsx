@@ -14,7 +14,7 @@ export default function SocialIcons() {
               fill: theme == "dark" ? "rgb(229 229 229)" : "rgb(28 25 23)",
             }}
             whileHover={{
-              fill: theme == "dark" ? "rgb(210 180 140)" : "rgb(7 89 133)",
+              fill: theme == "dark" ? "#e9bb5d" : "rgb(7 89 133)",
               scale: 0.9,
             }}
             key={theme}

@@ -44,9 +44,9 @@ export default function ProjectBackground() {
       variants={appearVariants}
       initial="hidden"
       animate="visible"
-      className="col-span-2 bg-[#f0f0f0] dark:bg-neutral-800 p-4 sm:p-6 rounded-lg flex flex-col gap-3"
+      className="col-span-2 bg-gray-100 dark:bg-neutral-800 p-4 sm:p-6 rounded-lg flex flex-col gap-3"
     >
-      <h2 className="text-sky-800 dark:text-[tan] text-xl rtl:font-ibmBold">
+      <h2 className="text-primary dark:text-dark text-xl rtl:font-ibmBold">
         {project_head}
       </h2>
       {descriptionTemplate}

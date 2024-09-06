@@ -10,6 +10,12 @@ const config: Config = {
         ibmBold: "IBM-Bold",
         ibmRegular: "IBM-Regular",
       },
+      colors: {
+        primary: "#075985",
+        primary_hover: "#0284c7",
+        dark: "#e9bb5d",
+        dark_hover: "#ffcf6e",
+      }
     },
   },
   plugins: [],

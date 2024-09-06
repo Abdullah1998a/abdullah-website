@@ -28,7 +28,7 @@ export default function Portfolio() {
       className="py-10"
     >
       <motion.header variants={headerVariants}>
-        <h1 className="text-sky-800 dark:text-[tan] text-2xl rtl:font-ibmBold">
+        <h1 className="text-primary dark:text-dark text-2xl rtl:font-ibmBold">
           {t("portfolio.head.title")}
         </h1>
         <p className="text-neutral-600 dark:text-neutral-300 mt-2.5">

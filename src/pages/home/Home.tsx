@@ -28,7 +28,7 @@ export default function Home() {
           {t("home.name.0")}{" "}
           <motion.span
             variants={nameVariants}
-            className="text-sky-800 dark:text-[tan] inline-block mt-4 md:mt-8 lg:mt-0"
+            className="text-primary dark:text-dark inline-block mt-4 md:mt-8 lg:mt-0"
           >
             {t("home.name.1")}
           </motion.span>
@@ -48,6 +48,7 @@ export default function Home() {
         <img
           src={theme === "light" ? hero : darkHero}
           alt={t("home.hero.alt")}
+          key={theme}
           className="md:w-4/5"
         />
       </motion.div>

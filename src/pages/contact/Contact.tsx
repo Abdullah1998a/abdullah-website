@@ -29,7 +29,7 @@ export default function Contact() {
     >
       <motion.header variants={appearVariants} className="flex-1">
         <div className="block lg:hidden">
-          <h1 className="text-sky-800 dark:text-[tan] text-2xl rtl:font-ibmBold">
+          <h1 className="text-primary dark:text-dark text-2xl rtl:font-ibmBold">
             {t("contact.head.title")}
           </h1>
           <p className="text-neutral-600 my-2.5 dark:text-neutral-300">

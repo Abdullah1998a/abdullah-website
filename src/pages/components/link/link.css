@@ -1,6 +1,6 @@
 nav .menu-links li:not(.contact) a.active,
 nav .menu-links li:not(.contact) a:hover {
-  @apply text-sky-800 dark:text-[tan] relative transition-all;
+  @apply text-primary dark:text-dark relative transition-all;
 }
 nav .menu-links li a::after {
   content: "";
@@ -8,10 +8,10 @@ nav .menu-links li a::after {
 }
 nav .menu-links li:not(.contact) a.active::after,
 nav .menu-links li:not(.contact) a:hover::after {
-  @apply w-3/4 h-0.5 bg-sky-800 dark:bg-[tan] absolute top-5 rtl:top-6 left-1/2 -translate-x-1/2 transition-all;
+  @apply w-3/4 h-0.5 bg-primary dark:bg-dark absolute top-5 rtl:top-6 left-1/2 -translate-x-1/2 transition-all;
 }
 nav .menu-links li.contact a {
-  @apply bg-sky-800 text-white dark:bg-[tan] dark:text-neutral-800 px-3.5 py-1.5 transition-all;
+  @apply bg-primary text-white dark:bg-dark dark:text-neutral-800 px-3.5 py-1.5 transition-all;
   border-radius: 10rem 2rem 10rem 10rem;
 }
 body[dir="rtl"] nav .menu-links li.contact a {
@@ -19,5 +19,5 @@ body[dir="rtl"] nav .menu-links li.contact a {
 }
 nav .menu-links li.contact a:hover,
 nav .menu-links li.contact a.active {
-  @apply bg-sky-600 dark:bg-[#f0cfa8];
+  @apply bg-primary_hover dark:bg-dark_hover;
 }

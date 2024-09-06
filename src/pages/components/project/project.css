@@ -1,3 +1,3 @@
 .project {
-  @apply grid p-4 sm:p-6 lg:p-8 gap-8 mx-auto sm:w-3/4 md:w-auto md:grid-cols-4 md:gap-0 bg-[#f0f0f0] dark:bg-neutral-800 items-center rounded-xl border-2 border-gray-100 dark:border-neutral-900 lg:grayscale hover:border-sky-800 dark:hover:border-[tan] hover:grayscale-0 duration-200 ease-out;
+  @apply grid p-4 sm:p-6 lg:p-8 gap-8 mx-auto sm:w-3/4 md:w-auto md:grid-cols-4 md:gap-0 bg-gray-100 dark:bg-neutral-800 items-center rounded-xl border-2 border-gray-100 dark:border-neutral-900 lg:grayscale hover:border-primary_hover dark:hover:border-dark_hover hover:grayscale-0 duration-200 ease-out;
 }

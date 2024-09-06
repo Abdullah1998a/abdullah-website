@@ -13,7 +13,7 @@ export default function NotFound() {
       exit="exit_hidden"
       className="flex flex-col justify-center items-center gap-4"
     >
-      <motion.h1 variants={fadeVariants} className="text-9xl text-red-600">
+      <motion.h1 variants={fadeVariants} className="text-9xl text-red-700 dark:text-red-500">
         {t("not_found.head.title")}
       </motion.h1>
       <motion.p

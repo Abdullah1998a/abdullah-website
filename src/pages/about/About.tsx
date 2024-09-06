@@ -23,12 +23,13 @@ export default function About() {
       >
         <img
           src={theme === "light" ? about : darkAbout}
+          key={theme}
           alt={t("about.about_img.alt")}
           className="w-5/6"
         />
       </motion.div>
       <motion.div variants={appearVariants} className="flex-1">
-        <h1 className="text-sky-800 dark:text-[tan] text-2xl rtl:font-ibmBold">
+        <h1 className="text-primary dark:text-dark text-2xl rtl:font-ibmBold">
           {t("about.head")}
         </h1>
         <div className="my-3">

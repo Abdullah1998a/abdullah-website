@@ -27,7 +27,7 @@ export default function University() {
               className="dark:rounded-md dark:bg-neutral-200 dark:p-[2px] aspect-square object-contain"
             />
           </span>
-          <h3 className="text-lg rtl:font-ibmBold font-semibold mb-1.5 dark:text-neutral-200">
+          <h3 className="text-lg rtl:font-ibmBold font-semibold mb-1.5 text-primary dark:text-dark">
             {name}
           </h3>
           <p className="dark:text-neutral-300">{organization}</p>
@@ -38,7 +38,7 @@ export default function University() {
             <ul className="flex gap-2 flex-wrap">
               {skills.map((skill) => (
                 <li
-                  className="bg-sky-800 text-white dark:bg-[tan] dark:text-neutral-900 py-1.5 px-2.5 shadow-md rounded-full text-sm"
+                  className="bg-pritext-primary text-white dark:bg-dark dark:text-neutral-900 py-1.5 px-2.5 shadow-md rounded-full text-sm"
                   key={skill}
                 >
                   {skill}
@@ -66,7 +66,7 @@ export default function University() {
         variants={appearVariants}
         initial="hidden"
         animate="visible"
-        className="lg:col-span-3 xl:col-start-2 xl:col-span-2 text-sky-800 dark:text-[tan] text-xl underline self-start lg:sticky top-2 rtl:font-ibmBold"
+        className="lg:col-span-3 xl:col-start-2 xl:col-span-2 text-primary dark:text-dark text-xl underline self-start lg:sticky top-2 rtl:font-ibmBold"
       >
         {head}
       </motion.h2>

@@ -35,7 +35,7 @@ export default function ProjectSummary() {
       animate="visible"
       className="flex flex-col gap-3 py-6"
     >
-      <h2 className="text-sky-800 dark:text-[tan] text-xl rtl:font-rubik">
+      <h2 className="text-primary dark:text-dark text-xl rtl:font-rubik">
         {name}
       </h2>
       <p className="text-neutral-600 dark:text-neutral-300">
@@ -72,7 +72,7 @@ export default function ProjectSummary() {
             >
               <path
                 fill="none"
-                className="stroke-sky-800 dark:stroke-[tan]"
+                className="stroke-primary dark:stroke-dark"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="1.5"

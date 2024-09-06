@@ -22,7 +22,7 @@ export default function Platform() {
     }) => (
       <motion.li
         variants={credentialsVariants}
-        className="bg-gray-100 dark:bg-neutral-800 px-6 py-4 rounded-md shadow relative"
+        className="bg-neutral-100 dark:bg-neutral-800 px-6 py-4 rounded-md shadow relative"
         key={id}
       >
         <span
@@ -35,7 +35,7 @@ export default function Platform() {
             className="dark:rounded-md dark:bg-neutral-200 dark:p-[2px] aspect-square object-contain"
           />
         </span>
-        <h3 className="text-lg rtl:font-ibmBold font-semibold mb-1.5 dark:text-neutral-200">
+        <h3 className="text-lg rtl:font-ibmBold font-semibold mb-1.5 text-primary dark:text-dark">
           {name}
         </h3>
         <p className="dark:text-neutral-300">
@@ -54,7 +54,7 @@ export default function Platform() {
         <ul className="flex gap-2 flex-wrap">
           {skills.map((skill) => (
             <li
-              className="font-rubik bg-sky-800 text-white dark:bg-[tan] dark:text-neutral-900 py-1.5 px-2.5 shadow-md rounded-full text-sm"
+              className="font-rubik bg-pritext-primary text-white dark:bg-dark dark:text-neutral-900 py-1.5 px-2.5 shadow-md rounded-full text-sm"
               key={skill}
             >
               {skill}
@@ -69,7 +69,7 @@ export default function Platform() {
           <i className="font-medium dark:text-neutral-200">{grade}</i>
         </p>
         <a
-          className="font-medium transition-colors hover:underline decoration-dotted hover:text-sky-800 dark:text-neutral-300 dark:hover:text-[tan]"
+          className="font-medium transition-colors hover:underline decoration-dotted hover:text-primary dark:text-neutral-300 dark:hover:text-dark"
           href={url}
         >
           {text}
@@ -83,7 +83,7 @@ export default function Platform() {
         variants={appearVariants}
         initial="hidden"
         animate="visible"
-        className="text-xl text-sky-800 rtl:font-ibmBold underline self-start lg:col-span-3 xl:col-start-2 xl:col-span-2 dark:text-[tan] lg:sticky top-2"
+        className="text-xl text-primary rtl:font-ibmBold underline self-start lg:col-span-3 xl:col-start-2 xl:col-span-2 dark:text-dark lg:sticky top-2"
       >
         {head}
       </motion.h2>

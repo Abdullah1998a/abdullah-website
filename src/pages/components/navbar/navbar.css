@@ -2,7 +2,7 @@
   @apply flex justify-between px-6 py-4 bg-neutral-100 dark:bg-neutral-700 relative z-20 shadow md:rounded-b-xl;
 }
 .logo {
-  @apply w-[3rem] h-fit rotate-2;
+  @apply w-12 h-fit rotate-2;
 }
 body[dir="rtl"] .logo {
   transform: rotateY(180deg);

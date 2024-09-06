@@ -14,7 +14,7 @@ export default function Education() {
       className="py-10"
     >
       <motion.header variants={appearVariants}>
-        <h1 className="text-sky-800 dark:text-[tan] text-2xl rtl:font-ibmBold">
+        <h1 className="text-primary dark:text-dark text-2xl rtl:font-ibmBold">
           {t("education.head.title")}
         </h1>
         <p className="text-neutral-600 dark:text-neutral-300 my-2.5">

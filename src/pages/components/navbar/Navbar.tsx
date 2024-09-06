@@ -24,7 +24,7 @@ export default function Navbar({ show, setShow }:NavbarProbs) {
         >
           <g
             transform="translate(0.000000,301.000000) scale(0.100000,-0.100000)"
-            className="fill-sky-800 dark:fill-[tan]"
+            className="fill-primary dark:fill-dark"
             stroke="none"
           >
             <path
@@ -77,7 +77,7 @@ export default function Navbar({ show, setShow }:NavbarProbs) {
           >
             <path
               fill="none"
-              className="stroke-sky-800 dark:stroke-white"
+              className="stroke-primary dark:stroke-white"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
