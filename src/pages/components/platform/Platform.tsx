@@ -54,7 +54,7 @@ export default function Platform() {
         <ul className="flex gap-2 flex-wrap">
           {skills.map((skill) => (
             <li
-              className="font-rubik bg-pritext-primary text-white dark:bg-dark dark:text-neutral-900 py-1.5 px-2.5 shadow-md rounded-full text-sm"
+              className="font-rubik bg-primary text-white dark:bg-dark dark:text-neutral-900 py-1.5 px-2.5 shadow-md rounded-full text-sm"
               key={skill}
             >
               {skill}
