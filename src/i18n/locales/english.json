@@ -341,7 +341,10 @@
       "name": "Full Name",
       "email": "Email Address",
       "message": "Message",
-      "send_btn": ["Send the Message", "Sending"]
+      "send_btn": {
+        "0": "Send the Message", 
+        "1": "Sending"
+      }
     },
     "success_message": {
       "head": "Thank you",
