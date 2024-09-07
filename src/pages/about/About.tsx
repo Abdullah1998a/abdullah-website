@@ -25,7 +25,7 @@ export default function About() {
           src={theme === "light" ? about : darkAbout}
           key={theme}
           alt={t("about.about_img.alt")}
-          className="w-5/6"
+          className="lg:w-5/6"
         />
       </motion.div>
       <motion.div variants={appearVariants} className="flex-1">

@@ -2,7 +2,6 @@ import { scaleVariants, errorVariants } from "./variants";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { FormikContextType } from "formik";
-import "./input.css";
 
 type ValuesType = {
   full_name: string,

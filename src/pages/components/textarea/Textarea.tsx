@@ -18,7 +18,7 @@ export default function Textarea({ formik }: {formik: FormikContextType<ValuesTy
         animate={{ marginBottom: touchedWithError ? "0.75rem": 0 }}
         className={`min-h-40 resize-none contact-field ${
           touchedWithError
-            ? "text-red-600 dark:text-red-500"
+            ? "text-red-600 border-red-600 dark:text-red-500 dark:border-red-500"
             : null
         }`}
         required

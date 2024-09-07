@@ -1,3 +1,9 @@
 .contact-form {
   @apply w-full mx-auto sm:w-3/5 lg:w-4/5 lg:ms-auto grid gap-4 py-10;
 }
+.contact-field {
+  @apply bg-gray-100 dark:bg-neutral-800 dark:dark:text-neutral-300 outline-none border-[1px] border-transparent px-2 pb-2 pt-5 rounded-md shadow-sm caret-primary dark:caret-dark;
+}
+.contact-label {
+  @apply text-primary dark:text-dark absolute top-1 left-2 rtl:right-2 text-sm;
+}

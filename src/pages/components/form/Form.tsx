@@ -67,7 +67,7 @@ export default function Form({ setThank } : FormProbs) {
           onSubmitProps.resetForm();
           onSubmitProps.setSubmitting(false);
         })
-        .catch((error) => console.log(error));
+        .catch(() => onSubmitProps.setSubmitting(true));
     },
   });
 
