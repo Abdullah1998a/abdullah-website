@@ -341,7 +341,7 @@
       "name": "Full Name",
       "email": "Email Address",
       "message": "Message",
-      "send_btn": "Send the Message"
+      "send_btn": ["Send the Message", "Sending"]
     },
     "success_message": {
       "head": "Thank you",
